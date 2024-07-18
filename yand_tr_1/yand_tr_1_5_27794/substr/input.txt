@@ -1,0 +1,22 @@
+2 1
+aa
+
+1 1
+a
+
+6 4
+aaaaaaa
+
+6 4
+ababaaa
+
+3 1
+abb
+
+5 2
+ababa
+
+2 2
+ab
+
+
