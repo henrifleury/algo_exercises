@@ -35,32 +35,16 @@ squares.append(number ** 2)
 '''
 
 import requests
-url = "https://jsonplaceholder.typicode.com/posts"
-response = requests.get(api_url)
-
-if response.status_code == 200:
-    print(response.text)
-else:
-    print(response.status_code)
-
-import requests
 import json
 
-# URL API
 url = "https://jsonplaceholder.typicode.com/posts"
 
-# Выполнение GET-запроса к API
 response = requests.get(url)
 
-# Проверка успешности запроса
 if response.status_code == 200:
-    # Получение данных в формате JSON
     data = response.json()
-
-    # Сохранение данных в файл
     with open('posts.json', 'w') as json_file:
         json.dump(data, json_file, indent=4)
 
-    print("Данные успешно сохранены в файл 'posts.json'.")
 else:
     print(f"Ошибка при получении данных: {response.status_code}")
