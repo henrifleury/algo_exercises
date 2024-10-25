@@ -6,3 +6,4 @@
 .env
 #/.gitignore
 /loc.txt
+tmp.py
